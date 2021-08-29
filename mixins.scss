@@ -1,0 +1,33 @@
+/*GENERAL*/
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin align {
+    text-align: center;
+}
+
+@mixin alignitems {
+    display: flex;
+    align-items: center;
+}
+
+
+@mixin shadow {
+    box-shadow: 0px 6px 21px 0px rgba(0,0,0,0.38);
+}

@@ -31,3 +31,9 @@
 @mixin shadow {
     box-shadow: 0px 6px 21px 0px rgba(0,0,0,0.38);
 }
+
+@mixin desktop {
+    @media screen and (min-width:1025px) {
+     @content;
+    }
+}

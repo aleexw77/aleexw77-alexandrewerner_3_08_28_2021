@@ -227,6 +227,7 @@ padding-bottom: 40px;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 15px;
+    position: relative;
     @include shadow;
     @include desktop {
        width: 24%;
@@ -253,11 +254,19 @@ padding-bottom: 40px;
         @include between;
         padding: 10px;
 
-      
-      i:hover {
-        color: $secondaire-color;  
+      .fas {
+         position: absolute;
+         bottom: 50px;
+         right: 10px;
+         opacity: 0;
+         &:hover{
+             opacity: 1;
+             color: $secondaire-color;
+         }
       }
+            
       
+    
 
     }
 
@@ -271,8 +280,17 @@ footer {
     background-color: rgb(10, 9, 9);
     padding-top: 20px;
     padding-bottom: 25px;
-    padding-left: 30px;
+    padding-left: 35px;
     height: 220px;
+    
+    
+  .Blocfooter {
+      height: 100%;
+      @include desktop {
+          flex-direction: row;
+          @include around;
+      }
+  }
     
 img{
     width: 100px;

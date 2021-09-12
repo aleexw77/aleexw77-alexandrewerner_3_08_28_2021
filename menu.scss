@@ -1,0 +1,308 @@
+@import "mixins.scss";
+@import "variable.scss";
+
+html,body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1,h2,h3{
+    font-family: 'Shrikhand', cursive;
+}
+
+.progressiv{
+    animation: show 3s ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes show {
+    0% {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+    }
+    100% {
+    opacity: 1;
+    transform: none;
+    }
+    } 
+
+header{
+width: 100%;
+
+
+.Blocheader {
+    width: 100%;
+    @include center;
+
+    a {
+        text-decoration: none;
+        color: black;
+        
+    }
+
+i {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+} 
+
+    
+img {
+    width: 170px;
+    height: auto;
+    object-fit: cover;
+    padding: 10px;
+}
+
+}
+
+}
+
+section {
+@include center;
+height: 1500px;
+@include desktop {
+    height: 1200px;
+}
+
+img{
+    width: 100%;
+   height: 350px;
+    object-fit: cover;
+    position: absolute;
+    top: 50px;
+    @include desktop {
+        height: 600px;
+    }
+}
+
+
+
+.blocmenu {
+    background-color: $bg-secondary;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 310px;
+    border-radius: 50px 50px 0 0;
+    flex-direction: column;
+    padding-bottom: 25px;
+    @include desktop{
+        position: absolute;
+        top: 575px;
+        width: 100%;  
+    }
+    
+
+    
+
+   .textelogo {
+       @include between;
+       padding-top: 10px;
+       
+
+       h1{
+           padding-left: 20px;
+           
+           
+          
+       }
+
+       i {
+           padding-right: 20px;
+       }
+   }
+
+   .underline {
+       padding-left: 20px;
+
+     &::after{
+         content: '';
+         display: block;
+         background: $tertiaire-color;
+         width: 40px;
+         height: 3px;
+     }
+
+
+   }
+
+.container{
+
+flex-direction: column;
+@include center;
+@include desktop {
+    flex-direction: row;
+}
+
+
+
+.menu {
+    width: 88%;
+    height: 80px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
+    @include between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    @include desktop{
+       width: 33%;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+    }
+    &:hover{
+        .check{
+            animation: slide-left 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            @keyframes slide-left {
+                from {
+                          opacity: 0;
+                         width: 1px;
+                         
+                          
+                }
+
+                
+                to {
+                          opacity: 1;
+                          width: 70px;
+                }
+              }
+              i{
+                  font-size: 1.33em;
+                animation: rotate-90-cw 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                @keyframes rotate-90-cw {
+                    0% {
+                              transform: rotate(0);
+                    }
+                    100% {
+                              transform: rotate(360deg);
+                    }
+                  }
+              }
+        }
+        .price {
+            margin-right: 75px;
+            margin-left: 25px;
+        
+        }
+        
+     :first-child {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        
+        :last-child {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+     }
+            
+            
+        
+    }
+
+    .check{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid  $tertiaire-color;
+        background: $tertiaire-color;
+        height: 79px;
+        width: 70px;
+        @include center;
+        color: white;
+        opacity: 0;
+        
+    }
+
+    p{
+        margin: 7px;
+    }
+
+     
+    
+    :first-child::first-line{
+        font-weight: bold;
+    }
+
+     
+    
+}
+
+}
+.btn{
+    
+@include center;
+.btn-commander {
+    border: 0px solid transparent;
+    border-radius: 60px;
+    width: 250px;
+    height: 60px;
+    background: rgb(255,121,218);
+    background: linear-gradient(180deg, rgba(255,121,218,1) 17%, rgba(244,117,218,1) 21%, rgba(240,116,218,1) 42%, rgba(147,86,220,1) 100%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include center;
+    @include shadow;
+    
+    
+    a{
+        text-decoration: none;
+        color:white;
+    }
+}
+
+}
+   
+    
+
+}
+
+}
+
+footer {
+    background-color: rgb(10, 9, 9);
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    height: 220px;
+    
+    
+  .Blocfooter {
+      height: 100%;
+      @include desktop {
+          flex-direction: row;
+          @include around;
+      }
+  }
+    
+img{
+    width: 100px;
+    height: auto;
+    filter: brightness(100)
+}
+
+.containerfooter {
+    @include alignitems;
+    color :white;
+    margin-bottom: -10px;
+}
+
+p{
+    color: white;
+}
+
+.logofooter {
+    padding-right: 5px;
+}
+
+}
+

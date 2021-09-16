@@ -1,4 +1,6 @@
 /*GENERAL*/
+/*RESPONSIVE*/
+/*FADE IN*/
 html, body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
@@ -410,9 +412,15 @@ section h2 {
   padding: 10px;
 }
 
+.Blocrestau .container .textelogo .far {
+  position: absolute;
+  bottom: 51px;
+  right: 10px;
+}
+
 .Blocrestau .container .textelogo .fas {
   position: absolute;
-  bottom: 50px;
+  bottom: 51px;
   right: 10px;
   opacity: 0;
 }

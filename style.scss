@@ -265,9 +265,15 @@ padding-bottom: 40px;
         @include between;
         padding: 10px;
 
+        .far {
+            position: absolute;
+         bottom: 51px;
+         right: 10px;
+        }
+
       .fas {
          position: absolute;
-         bottom: 50px;
+         bottom: 51px;
          right: 10px;
          opacity: 0;
          &:hover{
@@ -275,8 +281,7 @@ padding-bottom: 40px;
              color: $secondaire-color;
          }
       }
-            
-      
+
 
 
     }

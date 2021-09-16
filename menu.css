@@ -1,4 +1,6 @@
 /*GENERAL*/
+/*RESPONSIVE*/
+/*FADE IN*/
 html, body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -6,39 +8,6 @@ html, body {
 
 h1, h2, h3 {
   font-family: 'Shrikhand', cursive;
-}
-
-.progressiv {
-  -webkit-animation: show 3s ease-out;
-          animation: show 3s ease-out;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@-webkit-keyframes show {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -20%, 0);
-            transform: translate3d(0, -20%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@keyframes show {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -20%, 0);
-            transform: translate3d(0, -20%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
 }
 
 header {
@@ -144,18 +113,49 @@ section .blocmenu .textelogo {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 10px;
+  position: relative;
+  padding-left: 30px;
 }
 
-section .blocmenu .textelogo h1 {
-  padding-left: 20px;
+section .blocmenu .textelogo .fas {
+  opacity: 0;
+  position: absolute;
+  top: 39px;
+  right: 30px;
 }
 
-section .blocmenu .textelogo i {
-  padding-right: 20px;
+section .blocmenu .textelogo .fas:hover {
+  opacity: 1;
+  color: #FF79DA;
+}
+
+section .blocmenu .textelogo .far {
+  position: absolute;
+  top: 39px;
+  right: 30px;
+  opacity: 1;
 }
 
 section .blocmenu .underline {
   padding-left: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  section .blocmenu .underline {
+    padding-left: 45px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  section .blocmenu .underline {
+    padding-left: 55px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  section .blocmenu .underline {
+    padding-left: 20px;
+  }
 }
 
 section .blocmenu .underline::after {
@@ -188,6 +188,7 @@ section .blocmenu .container {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 5px;
   }
 }
 
@@ -211,13 +212,39 @@ section .blocmenu .container .menu {
   padding-right: 10px;
   margin-bottom: 15px;
   position: relative;
+  -webkit-animation: show 1s;
+          animation: show 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 @media screen and (min-width: 1025px) {
   section .blocmenu .container .menu {
     width: 33%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
@@ -228,7 +255,7 @@ section .blocmenu .container .menu:hover .check {
 
 @-webkit-keyframes slide-left {
   from {
-    opacity: 0;
+    opacity: 1;
     width: 1px;
   }
   to {
@@ -239,7 +266,7 @@ section .blocmenu .container .menu:hover .check {
 
 @keyframes slide-left {
   from {
-    opacity: 0;
+    opacity: 1;
     width: 1px;
   }
   to {
@@ -321,6 +348,406 @@ section .blocmenu .container .menu p {
 }
 
 section .blocmenu .container .menu :first-child::first-line {
+  font-weight: bold;
+}
+
+section .blocmenu .container .menu2 {
+  width: 88%;
+  height: 80px;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  -webkit-animation: show2 2.5s;
+          animation: show2 2.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes show2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes show2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  section .blocmenu .container .menu2 {
+    width: 33%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+section .blocmenu .container .menu2:hover .check {
+  -webkit-animation: slide-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 1;
+    width: 1px;
+  }
+  to {
+    opacity: 1;
+    width: 70px;
+  }
+}
+
+section .blocmenu .container .menu2:hover .check i {
+  font-size: 1.33em;
+  -webkit-animation: rotate-90-cw 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: rotate-90-cw 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+section .blocmenu .container .menu2:hover .price {
+  margin-right: 75px;
+  margin-left: 25px;
+}
+
+section .blocmenu .container .menu2:hover :first-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+section .blocmenu .container .menu2:hover :first-child :last-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+section .blocmenu .container .menu2 .check {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid #99E2D0;
+  background: #99E2D0;
+  height: 79px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  opacity: 0;
+}
+
+section .blocmenu .container .menu2 p {
+  margin: 7px;
+}
+
+section .blocmenu .container .menu2 :first-child::first-line {
+  font-weight: bold;
+}
+
+section .blocmenu .container .menu3 {
+  width: 88%;
+  height: 80px;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  -webkit-animation: show3 4s;
+          animation: show3 4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes show3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes show3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  section .blocmenu .container .menu3 {
+    width: 33%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+section .blocmenu .container .menu3:hover .check {
+  -webkit-animation: slide-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 1;
+    width: 1px;
+  }
+  to {
+    opacity: 1;
+    width: 70px;
+  }
+}
+
+section .blocmenu .container .menu3:hover .check i {
+  font-size: 1.33em;
+  -webkit-animation: rotate-90-cw 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: rotate-90-cw 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+section .blocmenu .container .menu3:hover .price {
+  margin-right: 75px;
+  margin-left: 25px;
+}
+
+section .blocmenu .container .menu3:hover :first-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+section .blocmenu .container .menu3:hover :first-child :last-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+section .blocmenu .container .menu3 .check {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid #99E2D0;
+  background: #99E2D0;
+  height: 79px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  opacity: 0;
+}
+
+section .blocmenu .container .menu3 p {
+  margin: 7px;
+}
+
+section .blocmenu .container .menu3 :first-child::first-line {
+  font-weight: bold;
+}
+
+section .blocmenu .container .menu4 {
+  width: 88%;
+  height: 80px;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  -webkit-animation: show3 4s;
+          animation: show3 4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@keyframes show3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  section .blocmenu .container .menu4 {
+    width: 33%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+section .blocmenu .container .menu4:hover .check {
+  -webkit-animation: slide-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 1;
+    width: 1px;
+  }
+  to {
+    opacity: 1;
+    width: 70px;
+  }
+}
+
+section .blocmenu .container .menu4:hover .check i {
+  font-size: 1.33em;
+  -webkit-animation: rotate-90-cw 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: rotate-90-cw 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+section .blocmenu .container .menu4:hover .price {
+  margin-right: 75px;
+  margin-left: 25px;
+}
+
+section .blocmenu .container .menu4:hover :first-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+section .blocmenu .container .menu4:hover :first-child :last-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+section .blocmenu .container .menu4 .check {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid #99E2D0;
+  background: #99E2D0;
+  height: 79px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  opacity: 0;
+}
+
+section .blocmenu .container .menu4 p {
+  margin: 7px;
+}
+
+section .blocmenu .container .menu4 :first-child::first-line {
   font-weight: bold;
 }
 

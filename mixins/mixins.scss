@@ -1,0 +1,202 @@
+/*GENERAL*/
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin align {
+    text-align: center;
+}
+
+@mixin alignitems {
+    display: flex;
+    align-items: center;
+}
+
+
+@mixin shadow {
+    box-shadow: 0px 6px 21px 0px rgba(0,0,0,0.38);
+}
+
+/*RESPONSIVE*/
+
+
+@mixin desktop {
+    @media screen and (min-width:1025px) {
+     @content;
+    }
+}
+
+@mixin ipad {
+    @media screen and (min-width:600px) {
+     @content;
+    }
+}
+
+@mixin ipadpro {
+    @media screen and (min-width:900px) {
+     @content;
+    }
+}
+
+/*FADE IN*/
+
+@mixin progressiv1 {
+    @content;
+    @keyframes show {
+        from {
+        opacity: 0;
+        
+        }
+        to {
+        opacity: 1;
+        transform: none;
+        }
+        }
+}
+
+@mixin progressiv2 {
+    @content;
+    @keyframes show2 {
+        from {
+        opacity: 0;
+        
+        }
+        to {
+        opacity: 1;
+        transform: none;
+        }
+        }
+}
+
+@mixin progressiv3 {
+    @content;
+    @keyframes show3 {
+        from {
+        opacity: 0;
+        
+        }
+        to {
+        opacity: 1;
+        transform: none;
+        }
+        }
+}
+
+@mixin progressiv4 {
+    @content;
+    @keyframes show4 {
+        from {
+        opacity: 0;
+        
+        }
+        to {
+        opacity: 1;
+        transform: none;
+        }
+        }
+}
+
+@mixin progressiv21 {
+    @content;
+    @keyframes show5 {
+        from {
+        opacity: 0;
+        
+        }
+        to {
+        opacity: 1;
+        transform: none;
+        }
+        }
+}
+
+@mixin progressiv22 {
+    @content;
+    @keyframes show6 {
+        from {
+        opacity: 0;
+        
+        }
+        to {
+        opacity: 1;
+        transform: none;
+        }
+        }
+}
+
+
+@mixin progressiv23 {
+    @content;
+    @keyframes show7 {
+        from {
+        opacity: 0;
+        
+        }
+        to {
+        opacity: 1;
+        transform: none;
+        }
+        }
+}
+
+
+@mixin progressiv31 {
+    @content;
+    @keyframes show8 {
+        from {
+        opacity: 0;
+        
+        }
+        to {
+        opacity: 1;
+        transform: none;
+        }
+        }
+}
+
+
+@mixin progressiv32 {
+    @content;
+    @keyframes show9 {
+        from {
+        opacity: 0;
+        
+        }
+        to {
+        opacity: 1;
+        transform: none;
+        }
+        }
+}
+
+@mixin progressiv33 {
+    @content;
+    @keyframes show10 {
+        from {
+        opacity: 0;
+        
+        }
+        to {
+        opacity: 1;
+        transform: none;
+        }
+        }
+}
+
+
+

@@ -7,8 +7,8 @@ html, body {
 }
 
 html .loading, body .loading {
-  -webkit-animation: load 5s;
-          animation: load 5s;
+  -webkit-animation: load 4s;
+          animation: load 4s;
 }
 
 @-webkit-keyframes load {
@@ -478,6 +478,11 @@ footer .containerfooter {
 }
 
 footer p {
+  color: white;
+}
+
+footer p a {
+  text-decoration: none;
   color: white;
 }
 

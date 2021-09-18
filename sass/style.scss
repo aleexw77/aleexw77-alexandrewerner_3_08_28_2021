@@ -9,7 +9,7 @@ html,body {
     
     
 .loading {
-    animation: load 5s;
+    animation: load 4s;
 }
 
 @keyframes load {
@@ -322,6 +322,10 @@ img{
 
 p{
     color: white;
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .logofooter {

@@ -277,8 +277,11 @@ padding-bottom: 40px;
          right: 10px;
          opacity: 0;
          &:hover{
-             opacity: 1;
-             color: $secondaire-color;
+             @include heart {
+                 animation : heartprogress 1.5s;
+                font-size: 1.35em;
+                
+             }
          }
       }
 

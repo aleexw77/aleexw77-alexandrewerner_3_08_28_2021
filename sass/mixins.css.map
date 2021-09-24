@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,WAAW;AAkCX,cAAc;AAqBd,WAAW",
+    "mappings": "AAGA,WAAW;AAkCX,cAAc;AAqBd,WAAW;AAySX,SAAS",
     "sources": [
-        "mixins.scss"
+        "mixins.scss",
+        "variable.scss"
     ],
     "names": [],
     "file": "mixins.css"

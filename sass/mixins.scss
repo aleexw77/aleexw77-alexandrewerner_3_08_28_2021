@@ -1,3 +1,6 @@
+@import "variable.scss";
+
+
 /*GENERAL*/
 
 @mixin center {
@@ -60,7 +63,6 @@
     @keyframes show {
         from {
         opacity: 0;
-        
         }
         to {
         opacity: 1;
@@ -68,6 +70,23 @@
         }
         }
 }
+
+@mixin progressivtop1 {
+    @content;
+    @keyframes slide-in-bottom {
+        0% {
+         opacity: 0;
+          transform: translate(0px, 5px);
+         
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
+}
+
+
 
 @mixin progressiv2 {
     @content;
@@ -81,6 +100,21 @@
         transform: none;
         }
         }
+}
+
+@mixin progressivtop2 {
+    @content;
+    @keyframes slide-in-bottom2 {
+        0% {
+          opacity: 0;
+          transform: translate(0px, 5px);
+         
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
 }
 
 @mixin progressiv3 {
@@ -97,6 +131,21 @@
         }
 }
 
+@mixin progressivtop3 {
+    @content;
+    @keyframes slide-in-bottom3 {
+        0% {
+         opacity: 0;
+          transform: translate(0px, 5px);
+         
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
+}
+
 @mixin progressiv4 {
     @content;
     @keyframes show4 {
@@ -109,6 +158,21 @@
         transform: none;
         }
         }
+}
+
+@mixin progressivtop4 {
+    @content;
+    @keyframes slide-in-bottom4 {
+        0% {
+         opacity: 0;
+          transform: translate(0px, 5px);
+         
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
 }
 
 @mixin progressiv21 {
@@ -125,6 +189,21 @@
         }
 }
 
+@mixin progressivtop21 {
+    @content;
+    @keyframes slide-in-bottom5 {
+        0% {
+          opacity: 0;
+          transform: translate(0px, 5px);
+         
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
+}
+
 @mixin progressiv22 {
     @content;
     @keyframes show6 {
@@ -137,6 +216,21 @@
         transform: none;
         }
         }
+}
+
+@mixin progressivtop22 {
+    @content;
+    @keyframes slide-in-bottom6 {
+        0% {
+          opacity: 0;
+          transform: translate(0px, 5px);
+         
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
 }
 
 
@@ -154,6 +248,21 @@
         }
 }
 
+@mixin progressivtop23 {
+    @content;
+    @keyframes slide-in-bottom7 {
+        0% {
+          opacity: 0;
+          transform: translate(0px, 5px);
+         
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
+}
+
 
 @mixin progressiv31 {
     @content;
@@ -167,6 +276,21 @@
         transform: none;
         }
         }
+}
+
+@mixin progressivtop31 {
+    @content;
+    @keyframes slide-in-bottom8 {
+        0% {
+          opacity: 0;
+          transform: translate(0px, 5px);
+         
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
 }
 
 
@@ -184,6 +308,21 @@
         }
 }
 
+@mixin progressivtop32 {
+    @content;
+    @keyframes slide-in-bottom9 {
+        0% {
+          opacity: 0;
+          transform: translate(0px, 5px);
+         
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
+}
+
 @mixin progressiv33 {
     @content;
     @keyframes show10 {
@@ -198,5 +337,82 @@
         }
 }
 
+@mixin progressivtop33 {
+    @content;
+    @keyframes slide-in-bottom10 {
+        0% {
+          opacity: 0;
+          transform: translate(0px, 5px);
+         
+        }
+        100% {
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
+}
+
+
+/*HEART*/
+
+@mixin heart {
+    @content;
+    @keyframes heartprogress {
+        from {
+            opacity: 0;
+            color: $secondaire-color;
+            
+            
+        }
+        to{
+            opacity: 1;
+           color:  $secondaire-color;
+           
+           
+        }
+
+
+    }
+}
+
+@mixin heart2 {
+    @content;
+    @keyframes heartprogress2 {
+        from {
+            opacity: 0;
+            color: $secondaire-color;
+            
+            
+        }
+        to{
+            opacity: 1;
+           color:  $secondaire-color;
+           
+           
+        }
+
+
+    }
+}
+
+@mixin heart3 {
+    @content;
+    @keyframes heartprogress3 {
+        from {
+            opacity: 0;
+            color: $secondaire-color;
+            
+            
+        }
+        to{
+            opacity: 1;
+           color:  $secondaire-color;
+           
+           
+        }
+
+
+    }
+}
 
 

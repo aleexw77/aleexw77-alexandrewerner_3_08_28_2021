@@ -1,6 +1,7 @@
 /*GENERAL*/
 /*RESPONSIVE*/
 /*FADE IN*/
+/*HEART*/
 html, body {
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
@@ -426,8 +427,31 @@ section h2 {
 }
 
 .Blocrestau .container .textelogo .fas:hover {
-  opacity: 1;
-  color: #FF79DA;
+  -webkit-animation: heartprogress 1.5s;
+          animation: heartprogress 1.5s;
+  font-size: 1.35em;
+}
+
+@-webkit-keyframes heartprogress {
+  from {
+    opacity: 0;
+    color: #FF79DA;
+  }
+  to {
+    opacity: 1;
+    color: #FF79DA;
+  }
+}
+
+@keyframes heartprogress {
+  from {
+    opacity: 0;
+    color: #FF79DA;
+  }
+  to {
+    opacity: 1;
+    color: #FF79DA;
+  }
 }
 
 footer {

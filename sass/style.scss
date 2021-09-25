@@ -9,31 +9,23 @@ html,body {
     
     
 .loading {
-    animation: load 4s;
+    animation: load 3s linear;
 }
 
 @keyframes load {
     0%{
-        opacity: 0;
+       opacity: 0;
     }
-
-    50%{
-        opacity: 0,25;
-    }
-    70% {
-        opacity: 0,50;
-    }
-
-    80%{
-        opacity: 0,75;
-    }
+    
     100%{
-        opacity: 1;
+        opacity:0;
     }
 }
    
 
 }
+
+  
 
 .spinloader {
     border-top: 10px solid $primaire-color;
@@ -43,11 +35,16 @@ html,body {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spin 4s linear;
+    animation: spin 3s linear;
     margin: auto;
-    position: absolute;
-    top: 0;left: 0;right: 0;bottom: 0;
-    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+
+    z-index: 999;
     opacity: 0;
 }
 
@@ -55,10 +52,12 @@ html,body {
     0% {
         transform: rotate(0deg);
         opacity: 1;
+        
     }
     100% {
         transform: rotate(360deg);
         opacity: 1;
+        
     }
 }
 
@@ -264,28 +263,31 @@ padding-bottom: 40px;
     .textelogo{
         @include between;
         padding: 10px;
-
+        position: relative;
+        
         .far {
-            position: absolute;
+        position: absolute;
          bottom: 51px;
          right: 10px;
+         font-size: 1.33em;
+         
         }
 
       .fas {
          position: absolute;
          bottom: 51px;
          right: 10px;
-         opacity: 0;
+         opacity:0;
+         font-size: 1.33em;
          &:hover{
              @include heart {
                  animation : heartprogress 1.5s;
-                font-size: 1.35em;
-                
+                  
              }
          }
       }
 
-
+    
 
     }
 

@@ -361,12 +361,12 @@
         from {
             opacity: 0;
             color: $secondaire-color;
-            
-            
+            transform: scale(1.1, 1.1);
         }
         to{
             opacity: 1;
            color:  $secondaire-color;
+           transform: scale(1.1, 1.1);
            
            
         }
@@ -381,13 +381,13 @@
         from {
             opacity: 0;
             color: $secondaire-color;
-            
+            transform: scale(1.1, 1.1);
             
         }
         to{
             opacity: 1;
            color:  $secondaire-color;
-           
+           transform: scale(1.1, 1.1);
            
         }
 
@@ -401,13 +401,13 @@
         from {
             opacity: 0;
             color: $secondaire-color;
-            
+            transform: scale(1.1, 1.1);
             
         }
         to{
             opacity: 1;
            color:  $secondaire-color;
-           
+           transform: scale(1.1, 1.1);
            
         }
 

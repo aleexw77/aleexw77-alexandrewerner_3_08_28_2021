@@ -8,25 +8,16 @@ html, body {
 }
 
 html .loading, body .loading {
-  -webkit-animation: load 4s;
-          animation: load 4s;
+  -webkit-animation: load 3s linear;
+          animation: load 3s linear;
 }
 
 @-webkit-keyframes load {
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 0,25;
-  }
-  70% {
-    opacity: 0,50;
-  }
-  80% {
-    opacity: 0,75;
-  }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -34,17 +25,8 @@ html .loading, body .loading {
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 0,25;
-  }
-  70% {
-    opacity: 0,50;
-  }
-  80% {
-    opacity: 0,75;
-  }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -56,15 +38,16 @@ html .loading, body .loading {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  -webkit-animation: spin 4s linear;
-          animation: spin 4s linear;
+  -webkit-animation: spin 3s linear;
+          animation: spin 3s linear;
   margin: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 200;
+  overflow: hidden;
+  z-index: 999;
   opacity: 0;
 }
 
@@ -411,12 +394,14 @@ section h2 {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+  position: relative;
 }
 
 .Blocrestau .container .textelogo .far {
   position: absolute;
   bottom: 51px;
   right: 10px;
+  font-size: 1.33em;
 }
 
 .Blocrestau .container .textelogo .fas {
@@ -424,22 +409,26 @@ section h2 {
   bottom: 51px;
   right: 10px;
   opacity: 0;
+  font-size: 1.33em;
 }
 
 .Blocrestau .container .textelogo .fas:hover {
   -webkit-animation: heartprogress 1.5s;
           animation: heartprogress 1.5s;
-  font-size: 1.35em;
 }
 
 @-webkit-keyframes heartprogress {
   from {
     opacity: 0;
     color: #FF79DA;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
   to {
     opacity: 1;
     color: #FF79DA;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
 }
 
@@ -447,10 +436,14 @@ section h2 {
   from {
     opacity: 0;
     color: #FF79DA;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
   to {
     opacity: 1;
     color: #FF79DA;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
 }
 

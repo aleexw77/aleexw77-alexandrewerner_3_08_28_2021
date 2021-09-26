@@ -61,207 +61,127 @@
 @mixin progressiv1 {
     @content;
     @keyframes show {
-        from {
-        opacity: 0;
-        }
-        to {
-        opacity: 1;
-        transform: none;
-        }
-        }
-}
-
-@mixin progressivtop1 {
-    @content;
-    @keyframes slide-in-bottom {
         0% {
-         opacity: 0;
-          transform: translate(0px, 5px);
-         
+        opacity: 0;
+        transform: translate(0px, 20px);
         }
-        100% {
+       
+        100%{
           opacity: 1;
           transform: translate(0px, 0px);
         }
-      }
+        }
+        
 }
+
+
 
 
 
 @mixin progressiv2 {
     @content;
     @keyframes show2 {
-        from {
+        0% {
         opacity: 0;
-        
+        transform: translate(0px, 20px);
         }
-        to {
+       
+        100% {
         opacity: 1;
-        transform: none;
+        transform: translate(0px, 0px);
         }
         }
+        
 }
 
-@mixin progressivtop2 {
-    @content;
-    @keyframes slide-in-bottom2 {
-        0% {
-          opacity: 0;
-          transform: translate(0px, 5px);
-         
-        }
-        100% {
-          opacity: 1;
-          transform: translate(0px, 0px);
-        }
-      }
-}
+
 
 @mixin progressiv3 {
     @content;
     @keyframes show3 {
-        from {
+        0% {
         opacity: 0;
+        transform: translate(0px, 20px);
+        }
         
-        }
-        to {
+        100% {
         opacity: 1;
-        transform: none;
+        transform: translate(0px, 0px);
         }
         }
+        
 }
 
-@mixin progressivtop3 {
-    @content;
-    @keyframes slide-in-bottom3 {
-        0% {
-         opacity: 0;
-          transform: translate(0px, 5px);
-         
-        }
-        100% {
-          opacity: 1;
-          transform: translate(0px, 0px);
-        }
-      }
-}
+
 
 @mixin progressiv4 {
     @content;
     @keyframes show4 {
         from {
         opacity: 0;
-        
+        transform: translate(0px, 20px);
         }
         to {
         opacity: 1;
-        transform: none;
+        transform: translate(0px, 0px);
         }
         }
 }
 
-@mixin progressivtop4 {
-    @content;
-    @keyframes slide-in-bottom4 {
-        0% {
-         opacity: 0;
-          transform: translate(0px, 5px);
-         
-        }
-        100% {
-          opacity: 1;
-          transform: translate(0px, 0px);
-        }
-      }
-}
+
 
 @mixin progressiv21 {
-    @content;
-    @keyframes show5 {
-        from {
+  @content;
+  @keyframes show5 {
+      0% {
         opacity: 0;
-        
-        }
-        to {
+        transform: translate(0px, 20px);
+      }
+     
+      
+      100% {
         opacity: 1;
-        transform: none;
-        }
-        }
-}
-
-@mixin progressivtop21 {
-    @content;
-    @keyframes slide-in-bottom5 {
-        0% {
-          opacity: 0;
-          transform: translate(0px, 5px);
-         
-        }
-        100% {
-          opacity: 1;
-          transform: translate(0px, 0px);
-        }
+        transform: translate(0px, 0px);
+      }
       }
 }
+
+
 
 @mixin progressiv22 {
     @content;
     @keyframes show6 {
-        from {
-        opacity: 0;
-        
+        0%{
+          opacity: 0;
+          transform: translate(0px, 20px);
         }
-        to {
+      100%{
         opacity: 1;
-        transform: none;
-        }
+        transform: translate(0px, 0px);
+      }
+       
         }
 }
 
-@mixin progressivtop22 {
-    @content;
-    @keyframes slide-in-bottom6 {
-        0% {
-          opacity: 0;
-          transform: translate(0px, 5px);
-         
-        }
-        100% {
-          opacity: 1;
-          transform: translate(0px, 0px);
-        }
-      }
-}
+
 
 
 @mixin progressiv23 {
     @content;
     @keyframes show7 {
-        from {
+        0% {
         opacity: 0;
-        
+        transform: translate(0px, 20px);
         }
-        to {
+        
+        100% {
         opacity: 1;
-        transform: none;
+        transform: translate(0px, 0px);
         }
         }
 }
 
-@mixin progressivtop23 {
-    @content;
-    @keyframes slide-in-bottom7 {
-        0% {
-          opacity: 0;
-          transform: translate(0px, 5px);
-         
-        }
-        100% {
-          opacity: 1;
-          transform: translate(0px, 0px);
-        }
-      }
-}
+
 
 
 @mixin progressiv31 {
@@ -269,29 +189,16 @@
     @keyframes show8 {
         from {
         opacity: 0;
-        
+        transform: translate(0px, 20px);
         }
         to {
         opacity: 1;
-        transform: none;
+        transform: translate(0px, 0px);
         }
         }
 }
 
-@mixin progressivtop31 {
-    @content;
-    @keyframes slide-in-bottom8 {
-        0% {
-          opacity: 0;
-          transform: translate(0px, 5px);
-         
-        }
-        100% {
-          opacity: 1;
-          transform: translate(0px, 0px);
-        }
-      }
-}
+
 
 
 @mixin progressiv32 {
@@ -299,58 +206,32 @@
     @keyframes show9 {
         from {
         opacity: 0;
-        
+        transform: translate(0px, 20px);
         }
         to {
         opacity: 1;
-        transform: none;
+        transform: translate(0px, 0px);
         }
         }
 }
 
-@mixin progressivtop32 {
-    @content;
-    @keyframes slide-in-bottom9 {
-        0% {
-          opacity: 0;
-          transform: translate(0px, 5px);
-         
-        }
-        100% {
-          opacity: 1;
-          transform: translate(0px, 0px);
-        }
-      }
-}
+
 
 @mixin progressiv33 {
     @content;
     @keyframes show10 {
         from {
         opacity: 0;
-        
+        transform: translate(0px, 20px);
         }
         to {
         opacity: 1;
-        transform: none;
+        transform: translate(0px, 0px);
         }
         }
 }
 
-@mixin progressivtop33 {
-    @content;
-    @keyframes slide-in-bottom10 {
-        0% {
-          opacity: 0;
-          transform: translate(0px, 5px);
-         
-        }
-        100% {
-          opacity: 1;
-          transform: translate(0px, 0px);
-        }
-      }
-}
+
 
 
 /*HEART*/

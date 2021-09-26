@@ -8,8 +8,8 @@ html, body {
 }
 
 html .loading, body .loading {
-  -webkit-animation: load 3s linear;
-          animation: load 3s linear;
+  -webkit-animation: load 1.75s linear;
+          animation: load 1.75s linear;
 }
 
 @-webkit-keyframes load {
@@ -38,15 +38,14 @@ html .loading, body .loading {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  -webkit-animation: spin 3s linear;
-          animation: spin 3s linear;
+  -webkit-animation: spin 1.75s linear;
+          animation: spin 1.75s linear;
   margin: auto;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  overflow: hidden;
   z-index: 999;
   opacity: 0;
 }
@@ -171,10 +170,11 @@ html .loading, body .loading {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
-.presentations-middle .btn-presentations .btn-presentations-search a {
-  text-decoration: none;
+.presentations-middle .btn-presentations .btn-presentations-search p {
   color: white;
 }
 

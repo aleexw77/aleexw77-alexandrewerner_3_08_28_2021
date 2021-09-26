@@ -9,7 +9,7 @@ html,body {
     
     
 .loading {
-    animation: load 3s linear;
+    animation: load 1.75s linear;
 }
 
 @keyframes load {
@@ -35,15 +35,13 @@ html,body {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spin 3s linear;
+    animation: spin 1.75s linear;
     margin: auto;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    overflow: hidden;
-
     z-index: 999;
     opacity: 0;
 }
@@ -119,9 +117,9 @@ html,body {
         &:hover{
             cursor: pointer;
             transform: scale(1.1);
+            filter: brightness(120%);
         }
-     a {
-         text-decoration: none;
+     p {
          color: white;
      }
     
